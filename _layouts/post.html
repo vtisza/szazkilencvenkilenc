@@ -87,7 +87,7 @@ post_class: post-template
             <!-- Post Date -->
             <p>
             <small>
-                <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
+                <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y.%m.%d." }}">{{ page.date | date:"%Y.%m.%d." }}</time></span>           
                 {% if page.last_modified_at %}
                 (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
                 {% endif %}
@@ -170,7 +170,7 @@ https://search.google.com/structured-data/testing-tool/u/0/
     "@type": "Person",
     "name": "{{ author.display_name }}"
   },
-  "datePublished": "{{ page.date | date:"%Y-%m-%d" }}",
+  "datePublished": "{{ page.date | date:"%Y.%m.%d." }}",
   "reviewRating": {
     "@type": "Rating",
     "ratingValue": "{{ page.rating }}",
