@@ -5,9 +5,7 @@ permalink: /sutik
 comments: false
 ---
 
- <article class="blog-content">
-                <div class="entry-content">
-                    <p><div id="cookieAlertBoxDetails">
+<div>
 <h4>Süti (&bdquo;cookie&rdquo;) Információ</h4>
 
 <p>Weboldalunkon &bdquo;cookie&rdquo;-kat (továbbiakban &bdquo;süti&rdquo;) alkalmazunk. Ezek olyan fájlok, melyek információt tárolnak webes böngészőjében. Ehhez az Ön hozzájárulása szükséges.<br />
@@ -99,7 +97,5 @@ Azon weblapoknak, melyek az Európai Unió országain belül működnek, a &bdqu
 <a href="https://support.microsoft.com/en-us/help/260971/description-of-cookies" target="_blank">Microsoft Description of Cookies</a><br />
 <a href="http://www.allaboutcookies.org/">All About Cookies</a><br />
 <a href="https://www.facebook.com/help/cookies/" style="padding-bottom: 20px;">Facebook cookies</a></div>
-<a class="btn btn-success btn-lg footer-log-button login-button-first-nav cookie-button" href="javascript: void(null);" id="understandCookieInformation" onclick="understandCookieInformation();">Értem</a><br />
 &nbsp;</p>
-                </div>
-            </article>
+</div>
