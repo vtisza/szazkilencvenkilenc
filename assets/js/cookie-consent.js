@@ -19,5 +19,40 @@ window.cookieconsent.initialise({
       "policy": 'Süti szabályok',
       "revokable": true,
       "href": "/sutik"
+    },
+    onInitialise: function (status) {
+      var type = this.options.type;
+      var didConsent = this.hasConsented();
+      if (type == 'opt-in' && didConsent) {
+        // enable cookies
+        loadGAonConsent();
+        loadDisqusOnConsent();
+      }
+      if (type == 'opt-out' && !didConsent) {
+        // disable cookies
+      }
+    },
+    onStatusChange: function(status, chosenBefore) {
+      var type = this.options.type;
+      var didConsent = this.hasConsented();
+      if (type == 'opt-in' && didConsent) {
+        // enable cookies
+        loadGAonConsent();
+        loadDisqusOnConsent();
+      }
+      if (type == 'opt-out' && !didConsent) {
+        // disable cookies
+      }
+    },
+    onRevokeChoice: function() {
+      var type = this.options.type;
+      if (type == 'opt-in') {
+        // disable cookies
+      }
+      if (type == 'opt-out') {
+        // enable cookies
+        loadGAonConsent();
+        loadDisqusOnConsent();
+      }
     }
   });
