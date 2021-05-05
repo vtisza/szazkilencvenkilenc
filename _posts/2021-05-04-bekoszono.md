@@ -2,30 +2,16 @@
 layout: post
 title:  "Beköszönés"
 author: Viktor
-categories: [ Jekyll, tutorial ]
-tags: [red, yellow]
-image: assets/images/11.jpg
-description: "My review of Inception movie. Acting, plot and something else in this short description."
+categories: [ nemadat ]
+tags: [nemadat]
+image: assets/images/cover.png
+description: "Helló világ, elindultunk!"
 featured: true
 hidden: false
-rating: 4.5
 ---
 
-Review products, books, movies, restaurant and anything you like on your Jekyll blog with Mediumish! JSON-LD ready for review property.
+Sok szeretettel üdvözlök minden új és reményem szerint visszatérő olvasómat!
 
-#### How to use?
+#### Mi lesz itt?
 
-It's actually really simple! Add the rating in your YAML front matter. It also supports halfs:
-
-```html
----
-layout: post
-title:  "Beköszönés"
-author: Viktor
-categories: [ Jekyll, tutorial ]
-tags: [red, yellow]
-image: assets/images/11.jpg
-description: "My review of Inception movie. Acting, plot and something else in this short description."
-rating: 4.5
----
-```
+#### Miben más min mások?
