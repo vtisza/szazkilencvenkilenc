@@ -7,7 +7,7 @@ tags: [nemadat]
 image: assets/images/cover.png
 description: "Helló világ, elindultunk!"
 featured: true
-hidden: false
+hidden: true
 ---
 
 Sok szeretettel üdvözlök minden új és reményem szerint visszatérő olvasómat!
