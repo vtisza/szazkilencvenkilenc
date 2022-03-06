@@ -38,8 +38,8 @@ Megvizsgálva néhány valószínű és kevésbé valószínű eseményt az alá
 | A Fidesz szerzi a legtöbb mandátumot, de nem lesz 50%-os többsége (a kisebbségi képviselők miatt)   | 1%     |
 | A Fidesz 2/3-os többséget szerez    | 13%       |
 | Az Egyesült Ellenzék 2/3-os többséget szerez   | 0,1%     |
-| A Fidesz nyeri a legtöbb mandátumot, de elveszíti a népszerűségi versenyt    | 10%       |
-| Az Egyesült Ellenzék nyeri a legtöbb mandátumot, de elveszíti a népszerűségi versenyt   | 0%     |
+| A Fidesz nyeri a legtöbb mandátumot, habár kevesebb szavazatot kap, mint a másik oldal    | 10%       |
+| Az Egyesült Ellenzék nyeri a legtöbb mandátumot, habár kevesebb szavazatot kap, mint a másik oldal   | 0%     |
 
 
 <br>
