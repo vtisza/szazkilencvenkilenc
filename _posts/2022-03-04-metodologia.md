@@ -58,7 +58,7 @@ A megoldás előképe az amerikai [fivethirtyeight](https://fivethirtyeight.com/
 {: id="adatok"}
 #### Milyen adatokat használnak az előrejelző modellek?
 
-Az előrejelző modellek elsősorban a különböző közvéleménykutatók méréseiből táplálkoznak. Ezek forrása **Tóka Gábor, 2019-. "Vox Populi választási kalauza" http://kozvelemeny.wordpress.com**. A kiválló oldalt nem csak az adatok, de az érdekes elemzések miatt is érdemes felekeresni.
+Az előrejelző modellek elsősorban a különböző közvéleménykutatók méréseiből táplálkoznak. Ezek forrása **Tóka Gábor, 2019-. "Vox Populi választási kalauza" http://kozvelemeny.wordpress.com**. A kiválló oldalt nem csak az adatok, de az érdekes elemzések miatt is érdemes felkeresni.
 
 A mandátumszámító modell ezen felül felhasználja a korábbi választások részletes eredményeit is.
 

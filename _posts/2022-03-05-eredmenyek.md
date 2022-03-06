@@ -12,12 +12,12 @@ hidden: false
 
 *A jelenlegi előrejelzés az orosz-ukrán háború előtti közvéleménykutatásokra épül. A háború esetleges hatásait így ez még nem tükrözi.*
 
-Előrejelző modellünk szerint a Fidesz népszerűsége közel 5% ponttal nagybb, mint az egységes ellenzéké, bár a tavalyi év végén közel azonos volt a két tábor nagysága egy rövid ideig. Mandátumra lefordítva ez egy lényegesen nagyobb különbséget jelent, mely stabil többséget biztosít a jelenlegi kormánypártnak.
+Mesterséges intelligencia alapú előrejelző modellünk szerint a Fidesz népszerűsége közel 5 százalékponttal nagyobb, mint az egységes ellenzéké, bár a tavalyi év végén közel azonos volt a két tábor nagysága egy rövid ideig. Mandátumra lefordítva ez egy lényegesen nagyobb különbséget jelent, mely stabil többséget biztosítana a jelenlegi kormánypártnak, ha most tartanák a választásokat.
 
   ![Eredmények](/assets/images/20220306/idosor.png)
 
 
-30.000 szimulációt elkészítve azt látjuk, hogy nincsen olyan scenárió, hogy az ellenzék parlamenti többséget szerezhetne egy most tartandó választáson. Kis eséllyel viszont, de előfordulnak olyan scenáriók, mikor az ellenzék valamivel több szavazatot kap. A szavazatok eloszlása és a választási rendszer kialakítása miatt azonban ez nem eredményezne több parlamenti mandátumot. Annak az esélye is elhanyagolható, hogy a Fidesz 2/3-os többségre tegyen szert.
+30.000 szimulációt elkészítve azt látjuk, hogy nincsen olyan scenárió, hogy az ellenzék parlamenti többséget szerezhetne egy most tartandó választáson. Kis eséllyel viszont előfordulnak olyan scenáriók, mikor az ellenzék valamivel több szavazatot kap. A szavazatok területi eloszlása és a választási rendszer kialakítása miatt azonban ez nem eredményezne többségi parlamenti mandátumot. Jelenleg annak az esélye is elhanyagolható, hogy a Fidesz 2/3-os többségre tegyen szert.
 
   ![Eredmények](/assets/images/20220306/most_eloszlas.png)
 
