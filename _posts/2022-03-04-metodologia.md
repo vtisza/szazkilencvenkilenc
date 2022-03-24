@@ -51,7 +51,7 @@ A népszerűségi adatokat felhasználva egy második modell is felhasználásra
 {: id="ujszeru"}
 #### Mennyire újszerű ez a megközelítés?
 
-Hasonló megoldással a magyar előrejelzések között még nem találkoztam (ez lehet, hogy ez csak az én figyelmetlenségemet mutatja). A legtöbb előrejelzés lényegesen egyszerűbb módszertannal dolgozik. Az egyszerűség nem szükségszerűen jelent rosszat, ezek is sokszor pontos eredményekhez vezethetnek.
+Hasonló megoldással a magyar előrejelzések között még nem találkoztam (ez lehet, hogy csak az én figyelmetlenségemet mutatja). A legtöbb előrejelzés lényegesen egyszerűbb módszertannal dolgozik. Az egyszerűség nem szükségszerűen jelent rosszat, ezek is sokszor pontos eredményekhez vezethetnek.
 
 A megoldás előképe az amerikai [fivethirtyeight](https://fivethirtyeight.com/) oldal, amely öndefiníciója szerint hasonló megoldásokat alkalmaz az amerikai elnökválasztások előrejelzésére.
 
