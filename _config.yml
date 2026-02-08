@@ -8,8 +8,10 @@ baseurl: ''
 google_analytics: 'G-3VENVMNBEF'
 disqus: 'szazkilencvenkilenc'
 mailchimp-list: 
+facebook: https://www.facebook.com/szazkilencvenkilenc
 include: ["_pages"]
 permalink: /:title/
+future: true
 
 # Authors
 authors:
@@ -21,6 +23,7 @@ authors:
     email: vtisza@gmail.com
     web: https://www.tisza.dev
     twitter: https://twitter.com/vtisza
+    facebook: https://www.facebook.com/szazkilencvenkilenc
     description: "Data scientist"
 
 # Plugins

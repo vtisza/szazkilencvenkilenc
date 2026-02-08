@@ -1,15 +1,363 @@
----
-# Add a comment to make this file sass-y.
-# Change this file for any custom CSS.
----
+--- # Add a comment to make this file sass-y. # Change this file for any custom CSS. ---
 
 /* We need to add display:inline in order to align the '>>' of the 'read more' link */
 .post-excerpt p {
-	display:inline;
+    display: inline;
 }
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-	"syntax",
-    "starsnonscss"
+@import "syntax",
+"starsnonscss"
 ;
+
+/* 
+==================================================
+Modernization Overrides - "Clean Tech / AI" Theme
+==================================================
+*/
+
+:root {
+    /* Color Palette */
+    --color-primary: #4f46e5;
+    /* Deep Indigo */
+    --color-primary-hover: #4338ca;
+    --color-secondary: #06b6d4;
+    /* Cyan/Teal */
+    --color-bg-body: #f8fafc;
+    /* Light Slate */
+    --color-bg-card: #ffffff;
+    --color-text-main: #1e293b;
+    /* Dark Slate */
+    --color-text-muted: #64748b;
+    --color-border: #e2e8f0;
+
+    /* Typography */
+    --font-heading: 'Plus Jakarta Sans', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* Spacing & Layout */
+    --radius-card: 16px;
+    --radius-btn: 50px;
+    --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Global Reset & Typography */
+body {
+    background-color: var(--color-bg-body);
+    font-family: var(--font-body);
+    color: var(--color-text-main);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.mainheading h1.sitetitle,
+.section-title h2,
+.listfeaturedtag h2.card-title,
+.listrecent h2.card-title,
+.navbar-brand {
+    font-family: var(--font-heading) !important;
+    color: var(--color-text-main);
+}
+
+a {
+    color: var(--color-primary);
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    color: var(--color-primary-hover);
+    text-decoration: none;
+}
+
+/* Navbar Modernization */
+.mediumnavigation {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.navbar-brand img {
+    max-height: 32px;
+}
+
+.mediumnavigation .nav-link {
+    font-weight: 500;
+    color: var(--color-text-main) !important;
+}
+
+.mediumnavigation .nav-link:hover {
+    color: var(--color-primary) !important;
+}
+
+/* Card Modernization */
+.listfeaturedtag,
+.card {
+    border: none;
+    border-radius: var(--radius-card);
+    background: var(--color-bg-card);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+    /* Ensure images follow radius */
+}
+
+/* Specific fix for the featured tag listing which has a border in original css */
+.listfeaturedtag {
+    border: none;
+    box-shadow: var(--shadow-soft);
+    margin-bottom: 2rem;
+    /* Add spacing */
+}
+
+.listfeaturedtag:hover,
+.listrecent .card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+}
+
+.listrecent .card {
+    box-shadow: var(--shadow-soft);
+    margin-bottom: 30px;
+    height: 100%;
+}
+
+.card-footer {
+    background: transparent;
+    padding-top: 0;
+}
+
+/* Section Titles */
+.section-title h2 {
+    border-bottom: none;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section-title h2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    border-radius: 2px;
+}
+
+.section-title span {
+    border-bottom: none;
+}
+
+/* Buttons */
+.btn {
+    border-radius: var(--radius-btn);
+    font-family: var(--font-body);
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.2s;
+}
+
+.btn-primary,
+.btn-outline-primary {
+    border-color: var(--color-primary);
+}
+
+.btn-primary {
+    background: var(--color-primary);
+}
+
+.btn-primary:hover {
+    background: var(--color-primary-hover);
+    border-color: var(--color-primary-hover);
+    transform: translateY(-1px);
+}
+
+.btn-outline-primary {
+    color: var(--color-primary);
+}
+
+.btn-outline-primary:hover {
+    background: var(--color-primary);
+    color: #fff;
+    border-color: var(--color-primary);
+}
+
+/* Footer */
+.footer {
+    background: #fff;
+    border-top: none !important;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.02);
+    margin-top: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* Mobile Responsiveness Improvements */
+@media (max-width: 768px) {
+
+    /* Better touch targets */
+    .nav-link,
+    .btn {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Fluid typography for headings */
+    h1,
+    .sitetitle {
+        font-size: clamp(1.75rem, 4vw, 2.5rem);
+    }
+
+    h2 {
+        font-size: clamp(1.5rem, 3vw, 2rem);
+    }
+
+    /* Container spacing */
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    /* Fix card margins on mobile */
+    .listfeaturedtag .wrapthumbnail {
+        height: 200px;
+        width: 100%;
+    }
+
+    /* Improve mobile nav dropdown */
+    .navbar-collapse {
+        background: #fff;
+        padding: 1rem;
+        border-radius: 0 0 var(--radius-card) var(--radius-card);
+        box-shadow: var(--shadow-hover);
+        margin-top: 10px;
+    }
+}
+
+
+
+/* 
+==================================================
+Table Modernization 
+==================================================
+*/
+
+.site-content table,
+.article-post table {
+    width: 100% !important;
+    max-width: 100%;
+    margin-bottom: 2rem !important;
+    border-collapse: collapse !important;
+    /* Collapsed for clean borders */
+    font-size: 0.95rem;
+    background-color: #fff !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+    border: 1px solid #cbd5e1 !important;
+    /* Darker border */
+    display: table !important;
+}
+
+.site-content th,
+.site-content td,
+.article-post th,
+.article-post td {
+    padding: 12px 16px !important;
+    text-align: left;
+    border-bottom: 1px solid #cbd5e1 !important;
+    /* Darker border */
+    border-right: 1px solid #cbd5e1 !important;
+    /* Distinct vertical border */
+    vertical-align: middle;
+    line-height: 1.5;
+    color: #334155 !important;
+}
+
+/* Remove right border from last column */
+.site-content tr td:last-child,
+.site-content tr th:last-child,
+.article-post tr td:last-child,
+.article-post tr th:last-child {
+    border-right: none !important;
+}
+
+.site-content th,
+.article-post th {
+    background-color: #f1f5f9 !important;
+    /* Darker header bg */
+    font-weight: 800 !important;
+    /* Extra bold */
+    color: #0f172a !important;
+    /* Darker text */
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid #94a3b8 !important;
+    /* Thick header separator */
+}
+
+/* Zebra Striping for better row tracking */
+.site-content tr:nth-child(even),
+.article-post tr:nth-child(even) {
+    background-color: #f8fafc !important;
+}
+
+.site-content tr:hover,
+.article-post tr:hover {
+    background-color: #e2e8f0 !important;
+    /* Distinct hover state */
+}
+
+/* Mobile scrolling */
+@media (max-width: 768px) {
+
+    .site-content table,
+    .article-post table {
+        display: block !important;
+        overflow-x: auto !important;
+        white-space: nowrap !important;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+font-weight: 700;
+color: var(--color-text-main);
+text-transform: uppercase;
+font-size: 0.8rem;
+letter-spacing: 0.05em;
+border-bottom: 2px solid var(--color-border);
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover {
+    background-color: #f8fafc;
+}
+
+/* Specific fix for text running together: ensure word-wrap or min-width if columns are squeezed */
+td {
+    white-space: normal;
+    /* Allow wrapping */
+}
+
+/* Mobile scrolling wrapper simulation */
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
