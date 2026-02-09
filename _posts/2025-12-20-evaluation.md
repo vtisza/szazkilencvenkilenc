@@ -3,7 +3,8 @@ layout: post
 title:  "Evaluation of the 2022 election forecast- 2025.12.20"
 author: Viktor
 categories: []
-tags: [előrejelzés, kiértékelés, "2022", "április"]
+tags: [előrejelzés, kiértékelés, "2022", "április", "English"]
+lang: en
 image: assets/images/20251220/evaluation.png
 description: "According to the independent LLM SzázKilencvenKilenc provided one of the best forecasts in 2022"
 featured: true

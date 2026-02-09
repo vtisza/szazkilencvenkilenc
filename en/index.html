@@ -1,0 +1,27 @@
+---
+layout: default
+title: SzázKilencvenKilenc
+lang: en
+---
+
+<!-- Posts Index
+================================================== -->
+<section class="recent-posts">
+
+    <div class="section-title">
+
+        <h2><span>{{ site.data.ui_text[page.lang].all_posts }}</span></h2>
+
+    </div>
+
+    <div class="row listrecent">
+
+        {% for post in site.posts %}
+        {% if post.tags contains 'English' %}
+        {% include postbox.html %}
+        {% endif %}
+        {% endfor %}
+
+    </div>
+
+</section>

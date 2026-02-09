@@ -1,0 +1,23 @@
+hu:
+  home: "Főoldal"
+  all_posts: "Összes cikk"
+  contact: "Kontakt"
+  follow_us: "Kövess minket Facebookon"
+  subscribe_title: "Iratkozz fel hírlevelünkre"
+  subscribe_button: "Feliratkozás"
+  prev: "Előző"
+  next: "Következő"
+  copyright: "Minden jog fenntartva"
+  explore: "Felfedezés"
+
+en:
+  home: "Home"
+  all_posts: "All Posts"
+  contact: "Contact"
+  follow_us: "Follow us on Facebook"
+  subscribe_title: "Never miss a story from us, subscribe to our newsletter"
+  subscribe_button: "Subscribe"
+  prev: "Previous"
+  next: "Next"
+  copyright: "All rights reserved"
+  explore: "Explore"

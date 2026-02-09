@@ -10,16 +10,19 @@ title: SzázKilencvenKilenc
 
     <div class="section-title">
 
-        <h2><span>Összes cikk</span></h2>
+        {% assign lang = page.lang | default: site.lang %}
+        <h2><span>{{ site.data.ui_text[lang].all_posts }}</span></h2>
 
     </div>
 
     <div class="row listrecent">
 
         {% for post in paginator.posts %}
+        {% unless post.lang == 'en' or post.tags contains 'English' %}
 
         {% include postbox.html %}
 
+        {% endunless %}
         {% endfor %}
 
     </div>
@@ -29,9 +32,8 @@ title: SzázKilencvenKilenc
 <!-- Pagination
 ================================================== -->
 <div class="bottompagination">
-<div class="pointerup"><i class="fa fa-caret-up"></i></div>
-<span class="navigation" role="navigation">
-    {% include pagination.html %}
-</span>
+    <div class="pointerup"><i class="fa fa-caret-up"></i></div>
+    <span class="navigation" role="navigation">
+        {% include pagination.html %}
+    </span>
 </div>
-
