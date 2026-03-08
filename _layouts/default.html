@@ -130,7 +130,11 @@
             <div class="mainheading">
                 <h1 class="sitetitle">{{ site.name }}</h1>
                 <p class="lead">
+                    {% if lang == 'en' %}
+                    Data driven political analysis
+                    {% else %}
                     {{ site.description }}
+                    {% endif %}
                 </p>
                 <a target="_blank" href="{{ site.facebook }}" class="btn btn-outline-primary btn-sm mt-3">
                     <i class="fab fa-facebook-f"></i> {{ site.data.ui_text[lang].follow_us }}

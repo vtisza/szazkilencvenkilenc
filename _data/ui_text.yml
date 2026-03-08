@@ -9,6 +9,7 @@ hu:
   next: "Következő"
   copyright: "Minden jog fenntartva"
   explore: "Felfedezés"
+  subtitle: "Adat alapú politikai előrejelzés"
 
 en:
   home: "Home"
@@ -21,3 +22,4 @@ en:
   next: "Next"
   copyright: "All rights reserved"
   explore: "Explore"
+  subtitle: "Data driven political analysis"
